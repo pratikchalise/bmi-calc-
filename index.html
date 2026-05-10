@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>BMI Calculator</h1>
+          <p>A simple Bmi Calculator made by pratik WITHOUT CSS LOLLL :D</p>
+        <div>
+            <button id="metric" onclick="units('metric')">Metric</button>
+            <button id="imperial" onclick="units('imperial')">Imperial</button>
+        </div>
+     <br/>
+        <div id="m-box">
+            <div>
+                <label>Height (cm)</label>
+                <input type="number" id="cm" placeholder="175" oninput="calc()">
+            </div>
+            <div>
+                <label>Weight (kg)</label>
+                <input type="number" id="kg" placeholder="70" oninput="calc()">
+            </div>
+        </div>
+      <br/>
+        <div id="i-box" style="display: none;">
+            <div>
+                <label>Height (ft/in)</label>
+                <input type="number" id="ft" placeholder="5" oninput="calc()">
+                <input type="number" id="in" placeholder="9" oninput="calc()">
+            </div>
+            <div>
+                <label>Weight (lbs)</label>
+                <input type="number" id="lbs" placeholder="150" oninput="calc()">
+            </div>
+        </div>
+
+        <div>
+            <div>Score: <span id="score">0.00</span></div><br/>
+            <div id="status">Enter details</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
